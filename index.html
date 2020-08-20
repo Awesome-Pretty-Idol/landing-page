@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>API</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A website dedicated to API">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="API">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://awesome-pretty-idol.com">
+  <meta property="og:image" content="https://awesome-pretty-idol.com/png/logo.png">
+  <meta name="theme-color" content="#F0FFFF">
+
+  <link rel="shortcut icon" href="img/jpg/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div id="Home">
+  <header>
+    <a href="#Api">
+      <img id="ApiLogo" src="img/png/logo.png" alt="Picture of API">
+    </a>
+  </header>
+  <main>
+    <!-- API Profiles -->
+  </main>
+  <footer>
+    <a href="https://www.youtube.com/channel/UCeuW1m-KICkukzSl3kTOnGg" class="logo">
+      <img class="lazyload" data-src="./img/media/YouTube.svg" alt="YouTube">
+    </a>
+    <a href="https://twitter.com/api_official_" class="logo">
+      <img class="lazyload" data-src="./img/media/Twitter.svg" alt="Twitter">
+    </a>
+
+    <a href="https://www.instagram.com/api_official_/" class="logo">
+      <img class="lazyload" data-src="./img/media/Instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://github.com/Awesome-Pretty-Idol" class="logo">
+      <img class="lazyload" data-src="./img/media/GitHub.svg" alt="GitHub">
+    </a>
+  </footer>
+</div>
+<script src="./js/lazysizes.min.js" async></script>
+<script src="./js/snow.js"></script>
+<script src="./js/main.js"></script>
+<script>
+  snow.main();
+
+  document.querySelector("main")
+    .appendChild(createArticleApiProfiles());
+
+  // Smooth anchor jump
+  document.querySelectorAll('a[href^="#"]')
+    .forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({
+            behavior: 'smooth',
+          });
+      });
+    });
+</script>
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-175938421-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
